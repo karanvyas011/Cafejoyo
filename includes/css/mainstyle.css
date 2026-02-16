@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Manrope:wght@200..800&display=swap');
+
+:root{    
+    --primefont: "Manrope", sans-serif;
+    --secondfont:  "Birthstone", cursive;
+}
+
+[data-cafejoyo-theme="light"] {
+    --body-bg: #ffffff;
+    --head-bg: #f8f7f4;
+    --nav-bg: #ffffff;
+    --banner-bg: rgba(92, 152, 243, 0.12); /* soft blue accent */
+    --prime-bg: #f28c28;   /* orange from logo */
+    --prime-alt-bg: #2e7d32; /* green from logo */
+    --alt-bg: #e3f2fd;     /* light blue background */
+    --card-bg: #ffffff;
+    --white-bg: #ffffff;
+    --dark-bg: #0000009d;
+    --form-bg: #ffffff;
+    --input-bg: #d8d8da;
+    --icon-bg: #5c98f3;    /* blue accent */
+    --footer-bg: #2e1e0e;
+    --footer-copy-bg: #1b1208;
+
+    --nav-text: #000000;
+    --white-text: #ffffff;
+    --prime-text: #f28c28;   /* orange text */
+    --prime-alt-text: #2e7d32; /* green text */
+    --head-text: #0f172a;
+    --para-text: #131313;
+    --icon-text: #ffffff;
+    --dark-text: #020617;
+    --star-text: #facc15;
+    --head-alt-text: #1e293b;
+    --para-alt-text: #ffffffcc;
+    --input-text: #000000;
+    --footer-text: #ffffff;
+    --footer-copy-text: #ffffff;
+    --list-text: #5c98f3;   /* blue list accent */
+
+    --prime-btn: #f28c28;
+    --prime-btn2: #d46a00;
+    --prime-btn-text: #ffffff;
+    --prime-btn-text2: #ffffff;
+    --prime-btn-border: #f28c28;
+    --prime-btn-border2: #d46a00;
+
+    --second-btn: #2e7d32;
+    --second-btn2: #1b5e20;
+    --second-btn-text: #ffffff;
+    --second-btn-text2: #ffffff;
+    --second-btn-border: #2e7d32;
+    --second-btn-border2: #1b5e20;
+
+    --custom-btn: #5c98f3;
+    --custom-btn2: #1565c0;
+    --custom-btn-text: #ffffff;
+    --custom-btn-text2: #ffffff;
+    --custom-btn-border: #5c98f3;
+    --custom-btn-border2: #1565c0;
+
+    --prime-border: #f28c28;
+    --light-border: #ffcc80;
+    --main-border: #2e7d32;
+}
+
+
+
+[data-cafejoyo-theme="dark"] {
+    --body-bg: #0f172a;       /* deep navy for base */
+    --head-bg: #1e293b;       /* slightly lighter header */
+    --nav-bg: #0f172a;
+    --banner-bg: rgba(92, 152, 243, 0.25); /* soft blue glow */
+    --prime-bg: #f28c28;      /* orange accent */
+    --prime-alt-bg: #2e7d32;  /* green accent */
+    --alt-bg: #1e293b;        /* muted dark background */
+    --card-bg: #1e293b;
+    --white-bg: #ffffff;
+    --dark-bg: #000000e6;
+    --form-bg: #1e293b;
+    --input-bg: #374151;
+    --icon-bg: #5c98f3;       /* blue accent */
+    --footer-bg: #111827;
+    --footer-copy-bg: #0b0f16;
+
+    --nav-text: #ffffff;
+    --white-text: #ffffff;
+    --prime-text: #f28c28;
+    --prime-alt-text: #2e7d32;
+    --head-text: #e5e7eb;
+    --para-text: #d1d5db;
+    --icon-text: #ffffff;
+    --dark-text: #f9fafb;
+    --star-text: #facc15;
+    --head-alt-text: #9ca3af;
+    --para-alt-text: #e5e7ebcc;
+    --input-text: #ffffff;
+    --footer-text: #d1d5db;
+    --footer-copy-text: #9ca3af;
+    --list-text: #5c98f3;
+
+    --prime-btn: #f28c28;
+    --prime-btn2: #d46a00;
+    --prime-btn-text: #ffffff;
+    --prime-btn-text2: #ffffff;
+    --prime-btn-border: #f28c28;
+    --prime-btn-border2: #d46a00;
+
+    --second-btn: #2e7d32;
+    --second-btn2: #1b5e20;
+    --second-btn-text: #ffffff;
+    --second-btn-text2: #ffffff;
+    --second-btn-border: #2e7d32;
+    --second-btn-border2: #1b5e20;
+
+    --custom-btn: #5c98f3;
+    --custom-btn2: #1565c0;
+    --custom-btn-text: #ffffff;
+    --custom-btn-text2: #ffffff;
+    --custom-btn-border: #5c98f3;
+    --custom-btn-border2: #1565c0;
+
+    --prime-border: #f28c28;
+    --light-border: #ffcc80;
+    --main-border: #2e7d32;
+}
+
+
+
+
+.body-bg {
+    background-color: var(--body-bg) !important;
+}
+.head-top-bg {
+    background: var(--head-top-bg) !important;
+}
+.head-bg {
+    background: var(--head-bg) !important;
+}
+.banner-bg {
+    background: var(--banner-bg) !important;
+}
+.prime-bg {
+    background-color: var(--prime-bg) !important;
+}
+.prime-alt-bg {
+    background-color: var(--prime-alt-bg) !important;
+}
+.nav-bg {
+    background-color: var(--nav-bg) !important;
+}
+.alt-bg {
+    background-color: var(--alt-bg) !important;
+} 
+.card-bg {
+    background-color: var(--card-bg) !important;
+} 
+.dark-bg {
+    background-color: var(--dark-bg) !important;
+}
+.card-alt-bg {
+    background-color: var(--card-alt-bg) !important;
+}
+.body-alt-bg {
+    background-color: var(--body-alt-bg) !important;
+}
+.input-bg {
+    background-color: var(--input-bg) !important;
+}
+.form-bg {
+    background-color: var(--form-bg) !important;
+}
+.custom-bg {
+    background-color: var(--custom-bg) !important;
+}
+.icon-bg {
+    background-color: var(--icon-bg) !important;
+}
+.footer-bg {
+    background-color: var(--footer-bg) !important;
+}
+.footer-copy-bg {
+    background-color: var(--footer-copy-bg) !important;
+}
+.white-bg {
+    background-color: var(--white-bg) !important;
+}
+
+
+.nav-text {
+    color: var(--nav-text) !important;
+}
+.icon-text {
+    color: var(--icon-text) !important;
+}
+.white-text {
+    color: var(--white-text) !important;
+}
+.prime-text {
+    color: var(--prime-text) !important;
+}
+.prime-alt-text {
+    color: var(--prime-alt-text) !important;
+}
+.head-text {
+    color: var(--head-text) !important;
+}
+.para-text {
+    color: var(--para-text) !important;
+}
+.dark-text {
+    color: var(--dark-text) !important;
+}
+.head-alt-text {
+    color: var(--head-alt-text) !important;
+}
+.para-alt-text {
+    color: var(--para-alt-text) !important;
+}
+.input-text {
+    color: var(--input-text) !important;
+}
+.footer-text {
+    color: var(--footer-text) !important;
+}
+.footer-copy-text {
+    color: var(--footer-copy-text) !important;
+}
+.list-text {
+    color: var(--list-text) !important;
+}
+
+.prime-btn {
+    background-color: var(--prime-btn) !important;
+    color: var(--prime-btn-text) !important;
+    text-transform: uppercase !important;
+    padding: 12px 32px;
+}
+
+.prime-btn:hover {
+    background-color: var(--prime-btn2) !important;
+    color: var(--prime-btn-text2) !important;
+    padding: 12px 32px;
+}
+
+.prime-outline-btn {
+    background-color: transparent !important;
+    color: var(--prime-btn-text) !important;
+    border: 1px solid var(--prime-btn-border2) !important;
+    text-transform: uppercase !important;
+    padding: 12px 32px;
+}
+.prime-outline-btn:hover {
+    background: var(--prime-btn) !important;
+    color: var(--prime-btn-text2) !important;
+    border: 1px solid var(--prime-btn-border) !important;
+    padding: 12px 32px;
+}
+
+.second-btn {
+    background-color: var(--second-btn) !important;
+    color: var(--second-btn-text) !important;
+    text-transform: uppercase !important;
+    padding: 12px 32px;
+}
+
+.second-btn:hover {
+    background-color: var(--second-btn2) !important;
+    color: var(--second-btn-text2) !important;
+    padding: 12px 32px;
+}
+
+.second-outline-btn {
+    background-color: transparent !important;
+    color: var(--second-btn-text) !important;
+    border: 1px solid var(--second-btn-border2) !important;
+    text-transform: uppercase !important;
+    padding: 12px 32px;
+}
+.second-outline-btn:hover {
+    background: var(--second-btn) !important;
+    color: var(--second-btn-text2) !important;
+    border: 1px solid var(--second-btn-border) !important;
+    padding: 12px 32px;
+}
+
+.custom-btn {
+    background-color: var(--custom-btn) !important;
+    color: var(--custom-btn-text) !important;
+    border: 3px solid var(--custom-btn-border);
+    text-transform: uppercase !important;
+    padding: 12px 32px;
+}
+.custom-btn:hover {
+    background: var(--custom-btn2) !important;
+    color: var(--custom-btn-text2) !important;
+    border: 3px solid var(--custom-btn-border2);
+    padding: 12px 32px;
+}
+
+.custom-outline-btn {
+    background-color: transparent !important;
+    color: var(--custom-btn-text) !important;
+    border: 2px solid var(--custom-btn-border2) !important;
+    text-transform: uppercase !important;
+    padding: 12px 32px;
+}
+.custom-outline-btn:hover {
+    background: var(--custom-btn) !important;
+    color: var(--custom-btn-text2) !important;
+    border: 2px solid var(--custom-btn-border) !important;
+    padding: 12px 32px;
+}
+
+
+.prime-border {
+    border-color: var(--prime-border) !important;
+} 
+.light-border {
+    border-color: var(--light-border) !important;
+}
+.main-border {
+    border-color: var(--main-border) !important;
+}
+
+.primefont {
+    font-family: var(--primefont) !important;
+}
+.secondfont {
+    font-family: var(--secondfont) !important;
+}
+.tertiaryfont {
+    font-family: var(--tertiaryfont) !important;
+}   
+
+/* font size */
+.fs-7{
+    font-size: 14px;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-30{
+    font-size: 30px;
+}
+.fs-48{
+    font-size: 48px;
+}
+.fs-lg{
+    font-size: calc(3rem + 1.3vw);
+}
+
+/* margin */
+.mt-32{
+    margin-top: 32px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.mb-64{
+    margin-bottom: 64px;
+}
+
+
+/* padding */
+.p-32{
+    padding: 32px;
+}
