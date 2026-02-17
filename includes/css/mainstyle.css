@@ -19,8 +19,8 @@
     --form-bg: #ffffff;
     --input-bg: #d8d8da;
     --icon-bg: #5c98f3;    /* blue accent */
-    --footer-bg: #2e1e0e;
-    --footer-copy-bg: #1b1208;
+    --footer-bg: #2e2e2e;
+    --footer-copy-bg: #000000;
 
     --nav-text: #000000;
     --white-text: #ffffff;
@@ -74,14 +74,14 @@
     --prime-bg: #f28c28;      /* orange accent */
     --prime-alt-bg: #2e7d32;  /* green accent */
     --alt-bg: #1e293b;        /* muted dark background */
-    --card-bg: #1e293b;
+    --card-bg: #0b172b;
     --white-bg: #ffffff;
     --dark-bg: #000000e6;
     --form-bg: #1e293b;
     --input-bg: #374151;
     --icon-bg: #5c98f3;       /* blue accent */
-    --footer-bg: #111827;
-    --footer-copy-bg: #0b0f16;
+    --footer-bg: #2e2e2e;
+    --footer-copy-bg: #000000;
 
     --nav-text: #ffffff;
     --white-text: #ffffff;

@@ -167,81 +167,148 @@ header, .navbar{
     border-radius: 50%;
 }
 
-
-
-/* menu css */
-
-/* Tabs */
-.menu-tabs .nav-links {
-  cursor: pointer;
-  font-size: 16px;
-  text-transform: uppercase;
-  padding: 8px 16px;
-  border-radius: 20px;
-  border: 2px solid var(--prime-border);
-  color: var(--prime-text);
-  transition: 0.3s;
+/* menu */
+.nav-tabs {
+    justify-content: center;
+    border-bottom: none;
+    margin-bottom: 25px;
 }
 
-.menu-tabs .nav-links.active,
-.menu-tabs .nav-links:hover {
-  background: var(--prime-bg);
-  color: var(--white-text);
+.nav-links {
+    background: transparent;
+    color: var(--prime-text);
+    border: 1px solid var(--prime-border);
+    padding: 8px 18px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+.nav-links.active,
+.nav-links:hover {
+    background: var(--prime-bg);
+    color: var(--white-text);
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px dashed var(--prime-border);
+}
+
+.menu-item img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid var(--light-border);
+}
+
+.menu-info {
+    flex: 1;
+}
+
+.menu-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0;
+    columns: 2;
+}
+
+.menu-price {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--prime-text);
+}
+
+.veg-badge {
+    background: var(--prime-alt-bg);
+    color: var(--white-text);
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-left: 8px;
+}
+
+@media (max-width:576px) {
+    .menu-info ul {
+        columns: 1;
+    }
 }
 
 /* Masonry Layout */
 .masonry {
-  columns: 3;
-  gap: 30px; 
-}
-@media (max-width: 767px) {
-    .masonry {
-        columns: 2;
-        gap: 20px; 
-    }    
+  column-count: 3;
+  column-gap: 20px;
 }
 
-.masonry-item {
+@media(max-width:992px){
+  .masonry { column-count: 2; }
+}
+@media(max-width:576px){
+  .masonry { column-count: 1; }
+}
+
+.gallery-item {
+  margin-bottom: 20px;
   break-inside: avoid;
-  margin-bottom: 30px;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 12px;
+  cursor: pointer;
 }
 
-.masonry-item img {
+.gallery-item img {
   width: 100%;
   display: block;
-  border-radius: 8px;
-  transition: .3s ease;
+  border-radius: 12px;
+  transition: 0.4s ease;
 }
 
-.overlay-visible {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.4s ease-in-out;
-}
-
-.overlay-content {
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+/* Simple hover zoom only */
+.gallery-item:hover img {
   transform: scale(1.05);
-  transition: all 0.4s ease-in-out;
 }
 
-.masonry-item:hover .overlay-visible {
-  opacity: 1;
-  visibility: visible;
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9999;
 }
 
-.masonry-item:hover .overlay-content {
-  transform: scale(1);
+.lightbox.active {
+  display: flex;
 }
+
+.lightbox-img {
+  max-width: 85%;
+  max-height: 80vh;
+  border-radius: 12px;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 35px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.controls span {
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 20px;
+  user-select: none;
+}
+
 
 /* testimonial css */
 .testimonial-img{
@@ -258,7 +325,7 @@ header, .navbar{
 .testimonial-card{
     padding: 40px 32px;
     border-radius: 5px;
-    text-align: center;
+    text-align: start;
     background-color: var(--alt-bg);
 }
 

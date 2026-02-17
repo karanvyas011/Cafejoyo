@@ -222,99 +222,312 @@
     <!-- service section end -->
 
     <!-- menu section start -->
-    <section class="py-5" id="menu">
-        <div class="container">
-            <div class="head-content" data-aos="fade-down" data-aos-duration="1500">
-                <p class="fs-7 mb-3 prime-text text-uppercase fw-semibold">Our Menu</p>
-                <h2 class="head-text fw-semibold secondfont display-5 text-capitalize mb-4">Explore Our Delicious Offerings</h2>
-                <p class="para-text">Discover a wide variety of fresh, flavorful pure vegetarian dishes and handcrafted beverages made with love.</p>
+    <section class="py-5 menu-bg" id="menu">
+        <div class="container py-5">
+            <div class="head-content text-center mb-4">
+                <h2 class="secondfont display-5 prime-text">Our Pure Veg Menu</h2>
             </div>
-            
-            <!-- Menu Tabs -->
-            <ul class="nav justify-content-center mb-5 gap-2 menu-tabs text-capitalize" data-aos="fade-down" data-aos-duration="1500">
-                <li class="nav-item mb-4"><a class="nav-links active" data-filter="all">All Items</a></li>
-                <li class="nav-item mb-4"><a class="nav-links" data-filter="Breakfast">Breakfast</a></li>
-                <li class="nav-item mb-4"><a class="nav-links" data-filter="MainCourse">Main Course</a></li>
-                <li class="nav-item mb-4"><a class="nav-links" data-filter="Beverages">Beverages</a></li>
-                <li class="nav-item mb-4"><a class="nav-links" data-filter="Desserts">Desserts</a></li>
+
+            <!-- Tabs -->
+            <ul class="nav nav-tabs gap-2 justify-content-center" id="menuTabs">
+                <li class="nav-item"><button class="nav-links active" data-bs-toggle="tab" data-bs-target="#all">ALL</button></li>
+                <li class="nav-item"><button class="nav-links" data-bs-toggle="tab" data-bs-target="#breakfast">BREAKFAST</button></li>
+                <li class="nav-item"><button class="nav-links" data-bs-toggle="tab" data-bs-target="#lunch">LUNCH</button></li>
+                <li class="nav-item"><button class="nav-links" data-bs-toggle="tab" data-bs-target="#dinner">DINNER</button></li>
+                <li class="nav-item"><button class="nav-links" data-bs-toggle="tab" data-bs-target="#coffee">COFFEE</button></li>
+                <li class="nav-item"><button class="nav-links" data-bs-toggle="tab" data-bs-target="#snacks">SNACKS</button></li>
             </ul>
 
-            <!-- Masonry Menu Gallery -->
-            <div class="masonry" id="menugallery" data-aos="fade-up" data-aos-duration="1500">
+            <div class="tab-content pt-4">
 
-                <!-- Breakfast -->
-                <div class="masonry-item Breakfast">
-                    <div class="position-relative">
-                        <img src="assets/images/poha.jpg" class="img-fluid object-fit-contain" alt="Poha">
-                        <div class="overlay-visible">
-                            <div class="overlay-content">
-                                <h3 class="white-text secondfont mb-2 fw-medium fs-4">Classic Poha</h3>
-                                <p class="prime-text mb-3 fw-medium">Breakfast Special</p>
+                <!-- ================= ALL ================= -->
+                <div class="tab-pane fade show active" id="all">
+                    <div class="row">
+
+                        <!-- Donut -->
+                        <div class="col-lg-6">
+                            <div class="menu-item">
+                                <img src="assets/images/donut.jpg" alt="menu-img1">
+                                <div class="menu-info">
+                                    <h3>Chocolate Donut <span class="veg-badge">Pure Veg</span></h3>
+                                    <ul>
+                                        <li>Flour</li><li>Sugar</li><li>Milk</li><li>Butter</li><li>Chocolate Glaze</li>
+                                    </ul>
+                                </div>
+                                <div class="menu-price">₹20</div>
                             </div>
                         </div>
+
+                        <!-- Pastry -->
+                        <div class="col-lg-6">
+                            <div class="menu-item">
+                                <img src="assets/images/pastry.jpg" alt="menu-img2">
+                                <div class="menu-info">
+                                    <h3>Chocolate Pastry <span class="veg-badge">Pure Veg</span></h3>
+                                    <ul>
+                                        <li>Flour</li><li>Cream</li><li>Chocolate</li><li>Butter</li><li>Vanilla</li>
+                                    </ul>
+                                </div>
+                                <div class="menu-price">₹60</div>
+                            </div>
+                        </div>
+
+                        <!-- Momos -->
+                        <div class="col-lg-6">
+                            <div class="menu-item">
+                                <img src="assets/images/momo.jpg" alt="menu-img3">
+                                <div class="menu-info">
+                                    <h3>Veg Momos <span class="veg-badge">Pure Veg</span></h3>
+                                    <ul>
+                                        <li>Maida</li><li>Vegetables</li><li>Ginger</li><li>Garlic</li><li>Sauce</li>
+                                    </ul>
+                                </div>
+                                <div class="menu-price">₹120</div>
+                            </div>
+                        </div>
+
+                        <!-- Noodles -->
+                        <div class="col-lg-6">
+                            <div class="menu-item">
+                                <img src="assets/images/noodles.jpg" alt="menu-img4">
+                                <div class="menu-info">
+                                    <h3>Veg Noodles <span class="veg-badge">Pure Veg</span></h3>
+                                    <ul>
+                                        <li>Noodles</li><li>Capsicum</li><li>Carrot</li><li>Onion</li><li>Soya Sauce</li>
+                                    </ul>
+                                </div>
+                                <div class="menu-price">₹140</div>
+                            </div>
+                        </div>
+
+                        <!-- Paneer Roll -->
+                        <div class="col-lg-6">
+                            <div class="menu-item">
+                                <img src="assets/images/roll.jpg" alt="menu-img5">
+                                <div class="menu-info">
+                                    <h3>Paneer Roll <span class="veg-badge">Pure Veg</span></h3>
+                                    <ul>
+                                        <li>Flatbread</li><li>Paneer</li><li>Capsicum</li><li>Onion</li><li>Mayonnaise</li>
+                                    </ul>
+                                </div>
+                                <div class="menu-price">₹280</div>
+                            </div>
+                        </div>
+
+                        <!-- Rusk -->
+                        <div class="col-lg-6">
+                            <div class="menu-item">
+                                <img src="assets/images/samosa.jpg" alt="menu-img6">
+                                <div class="menu-info">
+                                    <h3>Samosa <span class="veg-badge">Pure Veg</span></h3>
+                                    <ul>
+                                        <li>Maida</li>
+                                        <li>Potatoes</li>
+                                        <li> Peas</li>
+                                        <li>Spices</li>
+                                        <li>Cumin & Coriander</li>
+                                    </ul>
+                                </div>
+                                <div class="menu-price">₹18</div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
-                <div class="masonry-item Breakfast">
-                    <div class="position-relative">
-                        <img src="assets/images/sandwich.jpg" class="img-fluid object-fit-contain" alt="Sandwich">
-                        <div class="overlay-visible">
-                            <div class="overlay-content">
-                                <h3 class="white-text secondfont mb-2 fw-medium fs-4">Grilled Veg Sandwich</h3>
-                                <p class="prime-text mb-3 fw-medium">Breakfast Special</p>
+                <!-- ================= BREAKFAST ================= -->
+                <div class="tab-pane fade" id="breakfast">
+                    <div class="row">
+
+                        <div class="col-lg-6">
+                            <div class="menu-item">
+                                <img src="assets/images/pancake.jpg" alt="menu-img7">
+                                <div class="menu-info">
+                                    <h3>Fluffy Pancakes <span class="veg-badge">Pure Veg</span></h3>
+                                    <ul>
+                                        <li>Milk</li><li>Butter</li><li>Honey</li><li>Berries</li><li>Maple Syrup</li>
+                                    </ul>
+                                </div>
+                                <div class="menu-price">₹60</div>
                             </div>
                         </div>
+
+                        <div class="col-lg-6">
+                            <div class="menu-item">
+                                <img src="assets/images/sandwich.jpg" alt="menu-img8">
+                                <div class="menu-info">
+                                    <h3>Veg Sandwich <span class="veg-badge">Pure Veg</span></h3>
+                                    <ul>
+                                        <li>Brown Bread</li><li>Cheese</li><li>Cucumber</li><li>Tomato</li>
+                                    </ul>
+                                </div>
+                                <div class="menu-price">₹140</div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
-                <!-- Main Course -->
-                <div class="masonry-item MainCourse">
-                    <div class="position-relative">
-                        <img src="assets/images/paneer.jpg" class="img-fluid object-fit-contain" alt="Paneer Dish">
-                        <div class="overlay-visible">
-                            <div class="overlay-content">
-                                <h3 class="white-text secondfont mb-2 fw-medium fs-4">Paneer Butter Masala</h3>
-                                <p class="prime-text mb-3 fw-medium">Main Course</p>
+                <!-- ================= LUNCH ================= -->
+                <div class="tab-pane fade" id="lunch">
+                    <div class="row">
+
+                        <div class="col-lg-6">
+                            <div class="menu-item">
+                                <img src="assets/images/thali.jpg" alt="menu-img9">
+                                <div class="menu-info">
+                                    <h3>Thali <span class="veg-badge">Pure Veg</span></h3>
+                                    <ul>
+                                        <li>Paneer</li><li>Tomato Gravy</li><li>Spices</li><li>Rice / Chapati</li>
+                                    </ul>
+                                </div>
+                                <div class="menu-price">₹300</div>
                             </div>
                         </div>
+
+                         <div class="col-lg-6">
+                            <div class="menu-item">
+                                <img src="assets/images/paratha.jpg" alt="menu-img10">
+                                <div class="menu-info">
+                                    <h3>Aloo Paratha <span class="veg-badge">Pure Veg</span></h3>
+                                    <ul>
+                                        <li>Wheat Flour</li>
+                                        <li>Spiced Potatoes</li>
+                                        <li>Green Chillies</li>
+                                        <li>Coriander</li>
+                                        <li>Butter</li>
+                                        <li>Served with Curd & Pickle</li>
+                                    </ul>
+                                </div>
+                                <div class="menu-price">₹300</div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
-                <div class="masonry-item MainCourse">
-                    <div class="position-relative">
-                        <img src="assets/images/thali.jpg" class="img-fluid object-fit-contain" alt="Thali">
-                        <div class="overlay-visible">
-                            <div class="overlay-content">
-                                <h3 class="white-text secondfont mb-2 fw-medium fs-4">Special Veg Thali</h3>
-                                <p class="prime-text mb-3 fw-medium">Main Course</p>
+                <!-- ================= DINNER ================= -->
+                <div class="tab-pane fade" id="dinner">
+                    <div class="row">
+
+                        <div class="col-lg-6">
+                            <div class="menu-item">
+                                <img src="assets/images/pasta.jpg" alt="menu-img11">
+                                <div class="menu-info">
+                                    <h3>Veg Pasta Alfredo <span class="veg-badge">Pure Veg</span></h3>
+                                    <ul>
+                                        <li>Pasta</li><li>Alfredo Sauce</li><li>Parmesan</li><li>Mushrooms</li>
+                                    </ul>
+                                </div>
+                                <div class="menu-price">₹160</div>
                             </div>
                         </div>
+
+                        <div class="col-lg-6">
+                            <div class="menu-item">
+                                <img src="assets/images/paneer.jpg" alt="menu-img12">
+                                <div class="menu-info">
+                                    <h3>Paneer chart <span class="veg-badge">Pure Veg</span></h3>
+                                    <ul>
+                                        <li>Paneer</li><li>Tomato Gravy</li><li>Spices</li><li>Rice / Chapati</li>
+                                    </ul>
+                                </div>
+                                <div class="menu-price">₹200</div>
+                            </div>
+                        </div>
+
+                         <div class="col-lg-6">
+                            <div class="menu-item">
+                                <img src="assets/images/thali.jpg" alt="menu-img13">
+                                <div class="menu-info">
+                                    <h3>Thali <span class="veg-badge">Pure Veg</span></h3>
+                                    <ul>
+                                        <li>Paneer</li><li>Tomato Gravy</li><li>Spices</li><li>Rice / Chapati</li>
+                                    </ul>
+                                </div>
+                                <div class="menu-price">₹300</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="menu-item">
+                                <img src="assets/images/roll.jpg" alt="menu-img14">
+                                <div class="menu-info">
+                                    <h3>Paneer Roll <span class="veg-badge">Pure Veg</span></h3>
+                                    <ul>
+                                        <li>Flatbread</li><li>Paneer</li><li>Capsicum</li><li>Onion</li><li>Mayonnaise</li>
+                                    </ul>
+                                </div>
+                                <div class="menu-price">₹280</div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
-                <!-- Beverages -->
-                <div class="masonry-item Beverages">
-                    <div class="position-relative">
-                        <img src="assets/images/coffee.jpg" class="img-fluid object-fit-contain" alt="Coffee">
-                        <div class="overlay-visible">
-                            <div class="overlay-content">
-                                <h3 class="white-text secondfont mb-2 fw-medium fs-4">Cappuccino</h3>
-                                <p class="prime-text mb-3 fw-medium">Beverage</p>
+                <!-- ================= COFFEE ================= -->
+                <div class="tab-pane fade" id="coffee">
+                    <div class="row">
+
+                        <div class="col-lg-6">
+                            <div class="menu-item">
+                                <img src="assets/images/coffee.jpg" alt="menu-img15">
+                                <div class="menu-info">
+                                    <h3>Espresso <span class="veg-badge">Pure Veg</span></h3>
+                                    <ul>
+                                        <li>Fresh Coffee</li><li>Hot Water</li>
+                                    </ul>
+                                </div>
+                                <div class="menu-price">₹79</div>
                             </div>
                         </div>
+
+                        <div class="col-lg-6">
+                            <div class="menu-item">
+                                <img src="assets/images/coffee2.jpg" alt="menu-img16">
+                                <div class="menu-info">
+                                    <h3>Cappuccino <span class="veg-badge">Pure Veg</span></h3>
+                                    <ul>
+                                        <li>Espresso</li><li>Milk</li><li>Foam</li>
+                                    </ul>
+                                </div>
+                                <div class="menu-price">₹79</div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
-                <!-- Desserts -->
-                <div class="masonry-item Desserts">
-                    <div class="position-relative">
-                        <img src="assets/images/Brownie.jpg" class="img-fluid object-fit-contain" alt="Dessert">
-                        <div class="overlay-visible">
-                            <div class="overlay-content">
-                                <h3 class="white-text secondfont mb-2 fw-medium fs-4">Chocolate Brownie</h3>
-                                <p class="prime-text mb-3 fw-medium">Dessert</p>
+                <!-- ================= SNACKS ================= -->
+                <div class="tab-pane fade" id="snacks">
+                    <div class="row">
+
+                        <div class="col-lg-6">
+                            <div class="menu-item">
+                                <img src="assets/images/fries.jpg" alt="menu-img17">
+                                <div class="menu-info">
+                                    <h3>French Fries <span class="veg-badge">Pure Veg</span></h3>
+                                    <ul>
+                                        <li>Potatoes</li><li>Salt</li><li>Oil</li>
+                                    </ul>
+                                </div>
+                                <div class="menu-price">₹150</div>
                             </div>
                         </div>
+
+                        <div class="col-lg-6">
+                            <div class="menu-item">
+                                <img src="assets/images/tikka.jpg" alt="menu-img18">
+                                <div class="menu-info">
+                                    <h3>Paneer Tikka <span class="veg-badge">Pure Veg</span></h3>
+                                    <ul>
+                                        <li>Paneer</li><li>Yogurt</li><li>Spices</li>
+                                    </ul>
+                                </div>
+                                <div class="menu-price">₹220</div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -322,6 +535,69 @@
         </div>
     </section>
     <!-- menu section end -->
+
+    <!-- gallery start -->
+    <section class="cafe-gallery alt-bg py-5" id="gallery">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <p class="text-uppercase fw-semibold prime-text">Our Gallery</p>
+                <h2 class="display-6 secondfont">Moments From Our Cafe</h2>
+            </div>
+
+            <div class="masonry">
+
+                <div class="gallery-item">
+                    <img src="assets/images/gallery1.jpeg" alt="gallery1">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/gallery2.jpeg" alt="gallery2">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/gallery3.jpeg" alt="gallery3">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/gallery4.jpeg" alt="gallery4">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/gallery5.jpeg" alt="gallery5">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/gallery6.jpeg" alt="gallery6">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/gallery7.jpeg" alt="gallery7">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/gallery9.jpeg" alt="gallery9">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/gallery10.jpeg" alt="gallery10">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" src="" alt="lightbox-image">
+        <div class="controls">
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
+        </div>
+    </div>
+    <!-- gallery end -->
 
     <!-- testimonial section start -->
     <section class="py-5" id="testimonial">
@@ -338,15 +614,15 @@
                         <li class="splide__slide">
                             <div class="testimonial-card h-100" data-aos="fade-down">
                                 <p class="head-text mb-4">
-                                    “Cafe Joyo serves one of the best pure veg meals in the area. The taste is authentic, the ambiance is peaceful, and the service is truly heartwarming.”
+                                    “Amazing pure veg food with authentic Indian taste. The service is quick and the atmosphere is very comfortable for family dining.”
                                 </p>
-                                <div class="d-flex align-items-center justify-content-center">
+                                <div class="d-flex align-items-center justify-content-start">
                                     <div class="testimonial-img me-3">
                                         <img src="assets/images/test1.jpg" alt="test-img1">
                                     </div>
                                     <div>
                                         <h2 class="head-text text-uppercase fw-bold fs-18 m-0">Rahul Sharma</h2>
-                                        <p class="para-text fs-7 m-0">Local Food Lover</p>
+                                        <p class="para-text fs-7 m-0">Business Owner</p>
                                     </div>
                                 </div>
                             </div>
@@ -356,15 +632,15 @@
                         <li class="splide__slide">
                             <div class="testimonial-card h-100" data-aos="fade-up">
                                 <p class="head-text mb-4">
-                                    “A perfect place for family dining! The veg thali and coffee were absolutely delicious. Clean environment and very friendly staff.”
+                                    “The pav bhaji and masala chai were outstanding. Clean environment and very polite staff. Highly recommended!”
                                 </p>
-                                <div class="d-flex align-items-center justify-content-center">
+                                <div class="d-flex align-items-center justify-content-start">
                                     <div class="testimonial-img me-3">
                                         <img src="assets/images/test2.jpg" alt="test-img2">
                                     </div>
                                     <div>
-                                        <h2 class="head-text text-uppercase fw-bold fs-18 m-0">Priya Mehta</h2>
-                                        <p class="para-text fs-7 m-0">Family Visitor</p>
+                                        <h2 class="head-text text-uppercase fw-bold fs-18 m-0">Amit Verma</h2>
+                                        <p class="para-text fs-7 m-0">Software Engineer</p>
                                     </div>
                                 </div>
                             </div>
@@ -374,15 +650,15 @@
                         <li class="splide__slide">
                             <div class="testimonial-card h-100" data-aos="fade-down">
                                 <p class="head-text mb-4">
-                                    “Love the cozy indoor-outdoor seating and the joyful vibe of Cafe Joyo. Their breakfast options and desserts are my personal favorites!”
+                                    “Perfect place for weekend breakfast. The aloo paratha with butter was delicious and freshly prepared.”
                                 </p>
-                                <div class="d-flex align-items-center justify-content-center">
+                                <div class="d-flex align-items-center justify-content-start">
                                     <div class="testimonial-img me-3">
                                         <img src="assets/images/test3.jpg" alt="test-img3">
                                     </div>
                                     <div>
-                                        <h2 class="head-text text-uppercase fw-bold fs-18 m-0">Amit Verma</h2>
-                                        <p class="para-text fs-7 m-0">Regular Customer</p>
+                                        <h2 class="head-text text-uppercase fw-bold fs-18 m-0">Sanjay Patel</h2>
+                                        <p class="para-text fs-7 m-0">Chartered Accountant</p>
                                     </div>
                                 </div>
                             </div>
@@ -392,15 +668,15 @@
                         <li class="splide__slide">
                             <div class="testimonial-card h-100" data-aos="fade-up">
                                 <p class="head-text mb-4">
-                                    “Finally found a pure veg café that serves both quality and taste. The paneer dishes are amazing, and the mocktails are super refreshing!”
+                                    “Loved the cozy ambiance and friendly staff. The paneer dishes are flavorful and served hot.”
                                 </p>
-                                <div class="d-flex align-items-center justify-content-center">
+                                <div class="d-flex align-items-center justify-content-start">
                                     <div class="testimonial-img me-3">
                                         <img src="assets/images/test4.jpg" alt="test-img4">
                                     </div>
                                     <div>
-                                        <h2 class="head-text text-uppercase fw-bold fs-18 m-0">Sanjay Patel</h2>
-                                        <p class="para-text fs-7 m-0">Food Blogger</p>
+                                        <h2 class="head-text text-uppercase fw-bold fs-18 m-0">Vikram Singh</h2>
+                                        <p class="para-text fs-7 m-0">Entrepreneur</p>
                                     </div>
                                 </div>
                             </div>
@@ -410,59 +686,23 @@
                         <li class="splide__slide">
                             <div class="testimonial-card h-100" data-aos="fade-down">
                                 <p class="head-text mb-4">
-                                    “The ambiance at Cafe Joyo is so peaceful and welcoming. It’s now our regular weekend spot for breakfast and coffee.”
+                                    “A great vegetarian café with authentic flavors and generous portions. Definitely visiting again with friends.”
                                 </p>
-                                <div class="d-flex align-items-center justify-content-center">
+                                <div class="d-flex align-items-center justify-content-start">
                                     <div class="testimonial-img me-3">
                                         <img src="assets/images/test5.jpg" alt="test-img5">
                                     </div>
                                     <div>
-                                        <h2 class="head-text text-uppercase fw-bold fs-18 m-0">Neha Gupta</h2>
-                                        <p class="para-text fs-7 m-0">Happy Customer</p>
+                                        <h2 class="head-text text-uppercase fw-bold fs-18 m-0">Rohit Mehta</h2>
+                                        <p class="para-text fs-7 m-0">Marketing Manager</p>
                                     </div>
                                 </div>
                             </div>
                         </li>
 
-                        <!-- Slide 6 -->
-                        <li class="splide__slide">
-                            <div class="testimonial-card h-100" data-aos="fade-up">
-                                <p class="head-text mb-4">
-                                    “Loved the Special Veg Thali! Authentic flavors, generous portions, and quick service. Highly recommended for family dining.”
-                                </p>
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <div class="testimonial-img me-3">
-                                        <img src="assets/images/test6.jpg" alt="test-img6">
-                                    </div>
-                                    <div>
-                                        <h2 class="head-text text-uppercase fw-bold fs-18 m-0">Vikram Singh</h2>
-                                        <p class="para-text fs-7 m-0">Family Guest</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <!-- Slide 7 -->
-                        <li class="splide__slide">
-                            <div class="testimonial-card h-100" data-aos="fade-down">
-                                <p class="head-text mb-4">
-                                    “Great place for friends meetups. Delicious desserts, cozy seating, and friendly staff make every visit special.”
-                                </p>
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <div class="testimonial-img me-3">
-                                        <img src="assets/images/test7.jpg" alt="test-img7">
-                                    </div>
-                                    <div>
-                                        <h2 class="head-text text-uppercase fw-bold fs-18 m-0">Ritika Joshi</h2>
-                                        <p class="para-text fs-7 m-0">College Student</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
                     </ul>
                 </div>
             </div>
-
         </div>
     </section>
     <!-- testimonial section end -->
@@ -552,7 +792,7 @@
                 <div class="col-lg-6">
                     <div class="p-32" data-aos="fade-up">
                         <div class="mb-40">
-                            <h3 class="fs-3 head-text fw-medium secondfont">Visit Our Cafe</h3>
+                            <h3 class="fs-1 mb-0 head-text fw-semibold secondfont">Visit Our Cafe</h3>
                             <p class="para-text">
                                 Café Joyo <br>
                                 MP SH 31, Joyo Circle, <br>
@@ -561,13 +801,13 @@
                         </div>
 
                         <div class="mb-40">
-                            <h3 class="fs-3 head-text fw-medium secondfont">Connect With Us</h3>
+                            <h3 class="fs-1 mb-0 head-text fw-semibold secondfont">Connect With Us</h3>
                             <p class="para-text mb-0">Phone: +91 94250 20487</p>
                             <p class="para-text mb-0">Email: cafejoyo@gmail.com</p>
                         </div>
 
                         <div class="mb-40">
-                            <h3 class="fs-3 head-text fw-medium secondfont">Opening Hours</h3>
+                            <h3 class="fs-1 mb-0 head-text fw-semibold secondfont">Opening Hours</h3>
                             <p class="para-text mb-0">Everyday: 07:00 AM – 11:30 PM</p>
                         </div>
                     </div>
@@ -622,8 +862,8 @@
                 <div class="col-lg-2 col-sm-6 mb-4">
                     <h3 class="text-capitalize secondfont fw-bold fs-3 mb-3">Information</h3>
                     <ul class="list-unstyled text-capitalize d-flex flex-column gap-2">
-                        <li class="mb-2"><a href="#" class="footer-title">Gallery</a></li>
-                        <li class="mb-2"><a href="#" class="footer-title">Testimonials</a></li>
+                        <li class="mb-2"><a href="#gallery" class="footer-title">Gallery</a></li>
+                        <li class="mb-2"><a href="#testimonial" class="footer-title">Testimonials</a></li>
                         <li class="mb-2"><a href="#" class="footer-title">Privacy Policy</a></li>
                         <li class="mb-2"><a href="#" class="footer-title">Terms & Conditions</a></li>
                     </ul>

@@ -76,27 +76,7 @@ $(function(){
 });
 
 
-// portfolio tabs
-const tabs = document.querySelectorAll(".menu-tabs .nav-links");
-const items = document.querySelectorAll(".masonry-item");
 
-tabs.forEach(tab => {
-  tab.addEventListener("click", function () {
-
-    tabs.forEach(t => t.classList.remove("active"));
-    this.classList.add("active");
-
-    const filter = this.getAttribute("data-filter");
-
-    items.forEach(item => {
-      if (filter === "all" || item.classList.contains(filter)) {
-        item.style.display = "block";
-      } else {
-        item.style.display = "none";
-      }
-    });
-  });
-});
 
 // testimonial slider
 document.addEventListener('DOMContentLoaded', function () {
@@ -120,26 +100,46 @@ document.addEventListener('DOMContentLoaded', function () {
     }).mount();
 });
 
-// blog slider
-document.addEventListener('DOMContentLoaded', function () {
-    new Splide('#blog-slider', {
-        type       : 'loop',
-        perPage   : 3,
-        gap       : '1.5rem',
-        autoplay  : true,
-        perMove   : 1,
-        pauseOnHover: false,
-        arrows    : false,
-        pagination: true,
-        breakpoints: {
-            992: {
-                perPage: 2,
-            },
-            767: {
-                perPage: 1,
-            }
-        }
-    }).mount();
+const galleryImages = document.querySelectorAll(".gallery-item img");
+const lightbox = document.querySelector(".lightbox");
+const lightboxImg = document.querySelector(".lightbox-img");
+const closeBtn = document.querySelector(".close");
+const nextBtn = document.querySelector(".next");
+const prevBtn = document.querySelector(".prev");
+
+let currentIndex = 0;
+let images = [...galleryImages];
+
+galleryImages.forEach((img, index) => {
+  img.addEventListener("click", () => {
+    currentIndex = index;
+    showImage();
+    lightbox.classList.add("active");
+  });
+});
+
+function showImage() {
+  lightboxImg.src = images[currentIndex].src;
+}
+
+nextBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % images.length;
+  showImage();
+});
+
+prevBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  showImage();
+});
+
+closeBtn.addEventListener("click", () => {
+  lightbox.classList.remove("active");
+});
+
+lightbox.addEventListener("click", (e) => {
+  if (e.target === lightbox) {
+    lightbox.classList.remove("active");
+  }
 });
 
 AOS.init();
