@@ -243,27 +243,6 @@ header, .navbar{
   transform: scale(1);
 }
 
-
-
-
-
-/* process-card css */
-.process-card{
-    padding: 32px 16px;
-    text-align: center;
-    position: relative;
-}
-.process-number::after{
-    content: '';
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 2px;
-    background-color: var(--prime-bg);
-}
-
 /* testimonial css */
 .testimonial-img{
     max-width: 60px;
@@ -282,6 +261,31 @@ header, .navbar{
     text-align: center;
     background-color: var(--alt-bg);
 }
+
+/* Why Choose Us */
+.why-choose-us .choose-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.why-choose-us .choose-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.why-choose-us .choose-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background: rgba(0, 128, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
 
 /* =================================================== */
 #backtotop {
